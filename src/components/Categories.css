@@ -1,0 +1,99 @@
+.categories-section {
+  max-width: 996px;
+  margin: auto;
+  padding: 50px 40px; /* Increased padding for better spacing */
+}
+
+/* Header */
+.categories-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.categories-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.view-more {
+  text-decoration: none;
+  font-size: 16px;
+  color: #6A5ACD; /* Soft purple */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.view-more:hover {
+  color: #8A75E1;
+}
+
+/* Grid Layout - 3 Rows, 6 per Row */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Category Box */
+.category-box {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-box:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Wrapper - Adjusted Size */
+.icon-wrapper {
+  width: 60px;  
+  height: 60px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 25px; /* Adjusted icon size */
+  color: #6A5ACD;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.category-box:hover .icon-wrapper {
+  background-color: #e0e0e0;
+}
+
+/* Category Text */
+.category-box p {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 per row on medium screens */
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on tablets */
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+    grid-template-rows: repeat(6, auto);
+  }
+}

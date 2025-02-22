@@ -1,0 +1,101 @@
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #2f5f5c; /* Dark teal background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px; /* Increase width by adding more padding */
+    height: 120px; /* Reduce height */
+    max-width: 1350px; /* Increase width */
+    margin: auto;
+    position: relative;
+}
+
+/* Left and Right Images */
+.newsletter-left-img,
+.newsletter-right-img {
+    width: 160px;
+    height: auto;
+    position: absolute;
+}
+
+.newsletter-left-img {
+    left: -40px;
+    bottom: 0;
+}
+
+.newsletter-right-img {
+    right: -40px;
+    bottom: 0;
+}
+
+/* Newsletter Content */
+.newsletter-content {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+}
+
+.newsletter-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newsletter-content p {
+    color: black;
+}
+
+.discount-text {
+    color: #ffcc00; /* Yellow color for '20%' */
+}
+
+/* Subscription Form */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background: white;
+    overflow: hidden;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Email Input */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    flex: 1;
+}
+
+.email-icon {
+    font-size: 18px;
+    margin-right: 8px;
+    color: gray;
+}
+
+.newsletter-form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    color: black;
+}
+
+/* Coupon Button */
+.coupon-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.coupon-btn:hover {
+    background: #ffb800;
+}

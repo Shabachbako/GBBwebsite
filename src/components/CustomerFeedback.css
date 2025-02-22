@@ -1,0 +1,87 @@
+.customer-feedback {
+    text-align: center;
+    padding: 60px 40px; /* Increased padding for better spacing */
+    max-width: 996px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .feedback-slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px; /* Added spacing above the slider */
+    margin-bottom: 30px; /* Added spacing below the slider */
+  }
+  
+  .feedback-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 6 / 3); /* Adjust width for smooth sliding */
+  }
+  
+  .feedback-card {
+    background: #fff;
+    padding: 20px; /* Increased padding for better spacing inside cards */
+    margin: 15px; /* Increased margin for better spacing between cards */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ensure 3 cards fit within container */
+    min-width: 30%;
+    text-align: left;
+    border-radius: 8px; /* Slight rounding for a cleaner look */
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px; /* Added spacing below rating */
+  }
+  
+  .rating span {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  .feedback-text {
+    font-size: 14px;
+    margin: 10px 0;
+    height: 50px; /* Limit height to maintain uniformity */
+    overflow: hidden;
+  }
+  
+  .customer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Increased spacing above customer info */
+    padding-top: 10px; /* Added internal spacing */
+  }
+  
+  .customer-info img {
+    width: 50px; /* Increased image size slightly */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px; /* Added spacing between image and text */
+  }
+  
+  .feedback-navigation {
+    margin-top: 30px; /* Added spacing above navigation */
+    margin-bottom: 20px; /* Added spacing below navigation */
+  }
+  
+  .nav-btn {
+    background: #6A5ACD;
+    border: none;
+    padding: 10px 18px; /* Increased button size */
+    color: white;
+    border-radius: 50%;
+    margin: 8px; /* Increased spacing between buttons */
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background: #ff4500;
+  }
+  

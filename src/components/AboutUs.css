@@ -1,0 +1,89 @@
+/* Container */
+.about-container {
+    padding: 20px 10%;
+    background-color: #fcf5e6; /* Light beige background */
+    max-width: 996px;
+  }
+  
+  /* Breadcrumb Navigation */
+  .breadcrumb p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Page Header */
+  .about-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+  }
+  
+  /* About Content - Two Column Layout */
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 40px;
+  }
+  
+  /* Left Section - Image */
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Right Section - Text Content */
+  .about-text {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .about-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .about-text p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  /* Bullet Points */
+  .about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about-text ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Contact Button */
+  .contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6A5ACD; /* Yellow button */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .contact-btn:hover {
+    background-color: #e6b800;
+  }
+  

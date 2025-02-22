@@ -1,0 +1,84 @@
+.flash-sale {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F3E8FD; /* Lighter Purple Background */
+    max-width: 910px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  /* Countdown & Sale Text */
+  .sale-text {
+    display: block;
+    padding-right: 150px; /* Ensures countdown and sale content are stacked */
+  }
+  
+  /* Countdown Timer */
+  .countdown {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time {
+    font-size: 24px;
+    color: red;
+  }
+  
+  .label {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Sale Content */
+  .sale-content {
+    margin-top: 20px; /* Adds space between countdown and sale content */
+  }
+  
+  .sale-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sale-content p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now {
+    background: #6A5ACD;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .shop-now:hover {
+    background: #E0A800;
+  }
+  
+  /* Sale Image */
+  .sale-image img {
+    max-width: 300px;
+    height: auto;
+  }
+  
