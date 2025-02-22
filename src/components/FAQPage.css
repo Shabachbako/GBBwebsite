@@ -1,0 +1,137 @@
+/* FAQ Page Layout */
+.faq-page {
+    padding: 50px 20px;
+    background-color: #f8f5ef;
+    text-align: center;
+}
+
+.faq-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* FAQ and Contact Form Container */
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 996px;
+    margin: auto;
+    gap: 40px;
+}
+
+/* FAQ Section */
+.faq-section {
+    flex: 1;
+    text-align: left;
+    background: #fff;
+    padding: 30px;
+}
+
+.faq-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.faq-toggle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Contact Form Section */
+.contact-section {
+    flex: 1;
+    text-align: left;
+    background: #fff;
+    padding: 30px;
+}
+
+.contact-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-heading::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ff9900;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-section, .contact-section {
+        width: 100%;
+    }
+}

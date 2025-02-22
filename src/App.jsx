@@ -11,6 +11,8 @@ import NewsLetterSection from "./components/NewsLetterSection";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import AboutPage from "./components/AboutPage"; // ✅ Import the new AboutPage file
+import BlogPage from "./components/BlogPage";
+import FAQSection from "./components/FAQSection";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
 
         {/* ✅ About Page Route (Using AboutPage) */}
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/FAQ" element={<FAQSection />} />
       </Routes>
 
       <Footer /> {/* Footer stays on all pages */}
