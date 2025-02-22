@@ -88,7 +88,7 @@ const ContactUs = () => {
             <div className="icon"><FaMapMarkerAlt /></div>
             <div>
               <h3>Address</h3>
-              <p>4517 Washington Ave, Manchester, Kentucky 39495</p>
+              <p>18, association close, Ogudu Lagos Nigeria.</p>
             </div>
           </div>
 
