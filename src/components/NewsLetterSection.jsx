@@ -1,6 +1,6 @@
 import React from "react";
 import { FiMail } from "react-icons/fi";
-import "./NewsletterSection.css"; // Import CSS file
+import "./Newsletter.css"; // Import CSS file
 import leftImage from "../assets/news1.png"; // Left side chair image
 import rightImage from "../assets/news2.png"; // Right side chair & plant image
 
