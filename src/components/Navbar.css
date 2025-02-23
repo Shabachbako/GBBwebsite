@@ -1,158 +1,157 @@
 /* Navbar Container */
 .navbar {
-    width: 100vw;
-    background-color: #205c42;
-    padding: 15px 10px;
-    animation: slideDown 0.5s ease-in-out;
+  width: 100vw;
+  background-color: #205c42;
+  padding: 15px 10px;
+  animation: slideDown 0.5s ease-in-out;
 }
 
 /* Navbar Slide Animation */
 @keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 /* Navbar Layout */
 .navbar-container {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Left Section - Category Button */
 .navbar-left {
-    position: relative; /* Important for dropdown positioning */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative; /* Important for dropdown positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Dropdown Button */
 .category-btn {
-    background: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: transform 0.2s ease-in-out;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
+  background: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .category-btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Dropdown Icon Animation */
 .dropdown-icon {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .dropdown-icon.rotate {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Category Dropdown - Centered under the button */
 .category-list {
-    list-style: none;
-    background: white;
-    padding: 10px;
-    position: absolute;
-    top: 50px; /* Positioned right below the button */
-    left: 50%; /* Move it to center */
-    transform: translateX(-50%); /* Adjust to perfectly center it */
-    width: 220px; /* Set width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    opacity: 0;
-    transform: translateY(-20px) translateX(-50%);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    pointer-events: none;
-    z-index: 100;
-    text-align: center;
+  list-style: none;
+  background: white;
+  padding: 10px;
+  position: absolute;
+  top: 50px; /* Positioned right below the button */
+  left: 50%; /* Move it to center */
+  transform: translateX(-50%); /* Adjust to perfectly center it */
+  width: 220px; /* Set width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-20px) translateX(-50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 100;
+  text-align: center;
 }
 
 .category-list.open {
-    opacity: 1;
-    transform: translateY(0) translateX(-50%);
-    pointer-events: all;
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  pointer-events: all;
 }
 
 /* Category List Items */
 .category-list li {
-    padding: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
 }
 
 .category-list li:hover {
-    background: #6A5ACD;
-    color: white;
+  background: #6A5ACD;
+  color: white;
 }
 
 /* Navigation Menu */
 .navbar-menu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+  display: flex;
+  gap: 30px;
+  list-style: none;
 }
 
 /* Navigation Links */
 .navbar-menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: light;
-    font-size: 14px;
-    transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-weight: light;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
 }
 
 /* Active Link */
 .navbar-menu li a.active-link {
-    color: #f8a20c;
-    font-weight: bold;
+  color: #f8a20c;
+  font-weight: bold;
 }
 
 /* Hover Effect */
 .navbar-menu li a:hover {
-    color: #f8a20c;
+  color: #f8a20c;
 }
 
 /* Shop Now Button */
 .seller-btn {
-    background-color: #6A5ACD;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    align-items: center; /* Align icon and text */
-    gap: 8px; /* Space between icon and text */
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    border-radius: 5px;
+  background-color: #6A5ACD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 8px; /* Space between icon and text */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
 .seller-btn:hover {
-    background-color: #8A75E1;
+  background-color: #8A75E1;
 }
 
 /* Shopping Cart Icon */
 .cart-icon {
-    font-size: 18px;
+  font-size: 18px;
 }
-

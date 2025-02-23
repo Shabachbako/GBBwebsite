@@ -6,21 +6,21 @@
     max-width: 910px;
     margin: auto;
     padding: 40px;
-  }
-  
-  /* Countdown & Sale Text */
-  .sale-text {
+}
+
+/* Countdown & Sale Text */
+.sale-text {
     display: block;
     padding-right: 150px; /* Ensures countdown and sale content are stacked */
-  }
-  
-  /* Countdown Timer */
-  .countdown {
+}
+
+/* Countdown Timer */
+.countdown {
     display: flex;
     gap: 20px;
-  }
-  
-  .time-box {
+}
+
+.time-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,37 +31,37 @@
     justify-content: center;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .time {
+}
+
+.time {
     font-size: 24px;
     color: red;
-  }
-  
-  .label {
+}
+
+.label {
     font-size: 12px;
     font-weight: bold;
     color: black;
-  }
-  
-  /* Sale Content */
-  .sale-content {
+}
+
+/* Sale Content */
+.sale-content {
     margin-top: 20px; /* Adds space between countdown and sale content */
-  }
-  
-  .sale-content h2 {
+}
+
+.sale-content h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .sale-content p {
+}
+
+.sale-content p {
     font-size: 14px;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .shop-now {
+}
+
+.shop-now {
     background: #6A5ACD;
     border: none;
     color: white;
@@ -70,15 +70,65 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-  }
-  
-  .shop-now:hover {
+}
+
+.shop-now:hover {
     background: #E0A800;
-  }
-  
-  /* Sale Image */
-  .sale-image img {
+}
+
+/* Sale Image */
+.sale-image img {
     max-width: 300px;
     height: auto;
-  }
-  
+}
+
+/* --------------------- */
+/* RESPONSIVE DESIGN FOR 375PX SCREENS */
+/* --------------------- */
+@media (max-width: 375px) {
+    .flash-sale {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        padding: 20px; /* Reduce padding for better fit */
+    }
+
+    .sale-text {
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .countdown {
+        flex-wrap: wrap; /* Allow countdown boxes to wrap */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .time-box {
+        width: 70px; /* Reduce size */
+        height: 70px;
+    }
+
+    .time {
+        font-size: 20px; /* Adjust size */
+    }
+
+    .label {
+        font-size: 10px;
+    }
+
+    .sale-content h2 {
+        font-size: 22px; /* Reduce heading size */
+    }
+
+    .sale-content p {
+        font-size: 12px; /* Adjust text */
+    }
+
+    .shop-now {
+        font-size: 12px;
+        padding: 10px 18px; /* Reduce button size */
+    }
+
+    .sale-image img {
+        max-width: 250px; /* Scale image */
+    }
+}

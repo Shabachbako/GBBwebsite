@@ -6,79 +6,117 @@
     margin: 30px auto; /* Adds a 50px margin at the top and centers horizontally */
 }
 
-  
-  /* Individual Promo Box */
-  .promo-box {
+/* Individual Promo Box */
+.promo-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 48%;
     padding: 40px;
     position: relative;
-  }
-  
-  /* Background Colors */
-  .left-box {
+}
+
+/* Background Colors */
+.left-box {
     background: #FDECE4; /* Light Pink */
-  }
-  
-  .right-box {
+}
+
+.right-box {
     background: #E5EFFB; /* Light Blue */
-  }
-  
-  /* Promo Content */
-  .promo-content {
+}
+
+/* Promo Content */
+.promo-content {
     max-width: 40%;
-  }
-  
-  .category {
+}
+
+.category {
     font-size: 12px;
     font-weight: bold;
     color: #555;
     text-transform: uppercase;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
     line-height: 1.2;
-  }
-  
-  /* Buttons */
-  .shop-btn {
+}
+
+/* Buttons */
+.shop-btn {
     padding: 12px 20px;
     border: none;
     font-size: 14px;
     font-weight: 300;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-  }
-  
-  .green-btn {
+}
+
+.green-btn {
     background: #6A5ACD;
     color: white;
-  }
-  
-  .green-btn:hover {
+}
+
+.green-btn:hover {
     background: #1f4d46;
-  }
-  
-  .yellow-btn {
+}
+
+.yellow-btn {
     background: #FFC107;
     color: black;
-  }
-  
-  .yellow-btn:hover {
+}
+
+.yellow-btn:hover {
     background: #E0A800;
-  }
-  
-  /* Promo Images */
-  .promo-image img {
+}
+
+/* Promo Images */
+.promo-image img {
     max-width: 250px;
     height: auto;
     position: absolute;
     bottom: 0;
     right: 20px;
-  }
-  
+}
+
+/* --------------------- */
+/* RESPONSIVE DESIGN FOR 375PX SCREENS */
+/* --------------------- */
+@media (max-width: 375px) {
+    .promo-section {
+        flex-direction: column; /* Stack promo boxes vertically */
+        gap: 20px; /* Add space between stacked boxes */
+    }
+
+    .promo-box {
+        flex-direction: column;
+        width: 90%; /* Take up more width */
+        text-align: center;
+        padding: 25px; /* Reduce padding */
+        position: relative;
+    }
+
+    .promo-content {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    .shop-btn {
+        font-size: 12px;
+        padding: 10px 16px; /* Reduce button size */
+    }
+
+    .promo-image img {
+        position: relative;
+        max-width: 180px; /* Scale down image */
+        margin-top: 15px; /* Add spacing */
+        bottom: auto;
+        right: auto;
+    }
+}
